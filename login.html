@@ -25,6 +25,21 @@ License URL: http://creativecommons.org/licenses/by/3.0/
 						});
 					});
 				   </script>
+<script> 
+function myfunction()
+{ 
+    var radios = document.getElementsByName('status');
+    if(radios[0].checked)
+    {
+        window.location.href = "regStudent.html";
+    }
+    else
+    {
+        window.location.href = "regNonStudent.html";
+    }
+}
+</script>
+                                        
 <link href='//fonts.googleapis.com/css?family=Quicksand:400,300,700' rel='stylesheet' type='text/css'>
 </head>
 <body>
@@ -68,8 +83,10 @@ License URL: http://creativecommons.org/licenses/by/3.0/
 								<input placeholder="Email Address" type="text" required="">									
 								<input placeholder="Password" type="password" required="">	
 								<input placeholder="Confirm Password" type="password" required="">
+                                <input type="radio" name="status" value="Student" checked><label class="radio-text"> Student</label><br>
+                                <input type="radio" name="status" value="Alumni"><label class="radio-text">Alumni</label><br>
 									<div class="sign-up">
-										<input type="button" value="Create Account" onclick="window.location.href='regStudent.html'"/>
+                                        <input type="button" value="Create Account" onclick="myfunction()"/>
 									</div>
 							</form>
 						</div>
