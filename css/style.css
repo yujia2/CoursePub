@@ -39,12 +39,12 @@ select{
 }
 
 button{
-    background: #28ad9b;
-  background-image: -webkit-linear-gradient(top, #28ad9b, #2980b9);
-  background-image: -moz-linear-gradient(top, #28ad9b, #2980b9);
-  background-image: -ms-linear-gradient(top, #28ad9b, #2980b9);
-  background-image: -o-linear-gradient(top, #28ad9b, #2980b9);
-  background-image: linear-gradient(to bottom, #28ad9b, #2980b9);
+background: #e0ce86;
+  background-image: -webkit-linear-gradient(top, #e0ce86, #b08c6c);
+  background-image: -moz-linear-gradient(top, #e0ce86, #b08c6c);
+  background-image: -ms-linear-gradient(top, #e0ce86, #b08c6c);
+  background-image: -o-linear-gradient(top, #e0ce86, #b08c6c);
+  background-image: linear-gradient(to bottom, #e0ce86, #b08c6c);
   -webkit-border-radius: 28;
   -moz-border-radius: 28;
   border-radius: 28px;
