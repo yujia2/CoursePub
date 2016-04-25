@@ -29,7 +29,7 @@ img{max-width:100%;}
 /*end reset*/
 body{
 	font-family: 'Ubuntu', sans-serif;
-	background:#32A09F;
+	background:#c3a479;
 }
 
 select{
@@ -39,12 +39,12 @@ select{
 }
 
 button{
-    background: #28ad9b;
-  background-image: -webkit-linear-gradient(top, #28ad9b, #2980b9);
-  background-image: -moz-linear-gradient(top, #28ad9b, #2980b9);
-  background-image: -ms-linear-gradient(top, #28ad9b, #2980b9);
-  background-image: -o-linear-gradient(top, #28ad9b, #2980b9);
-  background-image: linear-gradient(to bottom, #28ad9b, #2980b9);
+background: #e0ce86;
+  background-image: -webkit-linear-gradient(top, #e0ce86, #b08c6c);
+  background-image: -moz-linear-gradient(top, #e0ce86, #b08c6c);
+  background-image: -ms-linear-gradient(top, #e0ce86, #b08c6c);
+  background-image: -o-linear-gradient(top, #e0ce86, #b08c6c);
+  background-image: linear-gradient(to bottom, #e0ce86, #b08c6c);
   -webkit-border-radius: 28;
   -moz-border-radius: 28;
   border-radius: 28px;
@@ -54,6 +54,15 @@ button{
   padding: 10px 20px 10px 20px;
   text-decoration: none;
 
+}
+button:hover {
+   background: #c9a55c;
+  background-image: -webkit-linear-gradient(top, #c9a55c, #d9a234);
+  background-image: -moz-linear-gradient(top, #c9a55c, #d9a234);
+  background-image: -ms-linear-gradient(top, #c9a55c, #d9a234);
+  background-image: -o-linear-gradient(top, #c9a55c, #d9a234);
+  background-image: linear-gradient(to bottom, #c9a55c, #d9a234);
+  text-decoration: none;
 }
 .header {
     text-align: center;
