@@ -55,6 +55,15 @@ background: #e0ce86;
   text-decoration: none;
 
 }
+button:hover {
+   background: #c9a55c;
+  background-image: -webkit-linear-gradient(top, #c9a55c, #d9a234);
+  background-image: -moz-linear-gradient(top, #c9a55c, #d9a234);
+  background-image: -ms-linear-gradient(top, #c9a55c, #d9a234);
+  background-image: -o-linear-gradient(top, #c9a55c, #d9a234);
+  background-image: linear-gradient(to bottom, #c9a55c, #d9a234);
+  text-decoration: none;
+}
 .header {
     text-align: center;
     margin-top: 4em;
