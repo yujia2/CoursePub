@@ -29,24 +29,41 @@ img{max-width:100%;}
 /*end reset*/
 /****-----start-body----****/
 body{
-	background: #227279;
-    font-family: 'Quicksand', sans-serif;
+	background: #f4f4f4;
+    font-family: 'Quicksand', comic;
 }
 .wrap {
-	width:80%;
-	margin:0 auto;
+    position: absolute;
+    right: 0px;
+    width:50%;
+}
+.intro {
+    position: absolute;
+    left: 30px;
+	margin:60px auto;
+    width:50%;
+    font-size: 30px;
+    font-color: #223648;
+    font-family: 'Quicksand', sans-serif;
+}
+li {
+    margin: 30px;
+    list-style-type: circle;
 }
 .main-content{
-	width:40%;
+	width:70%;
+    position: absolute;
+    right: 60px;
 	margin:60px auto;
 	background-color: #fff;
 }
 
 h1{
-    font-size: 50px;
+    font-size: 80px;
     color: #fff;
-    text-align: center;
-    margin-top: 60px;
+    text-align: left;
+    margin-top: 0px;
+    background-color: #c0b283;
 }
 
 /*----sap-----*/
@@ -126,7 +143,7 @@ h2.resp-accordion {
 	letter-spacing:1px;
 }
 
-.register input[type="submit"] {
+.register input[type="button"] {
     background:#CA1216;
     color: #fff;
 	border: none;
@@ -145,7 +162,7 @@ h2.resp-accordion {
 	font-weight:700;
 	text-transform:uppercase;
 }
-.register input[type="submit"]:hover{
+.register input[type="button"]:hover{
     background:#227279;
 }
  ::-webkit-input-placeholder{
