@@ -64,6 +64,19 @@ button:hover {
   background-image: linear-gradient(to bottom, #c9a55c, #d9a234);
   text-decoration: none;
 }
+h4{
+  position: relative;
+  font-family: "Times New Roman", Times, serif;
+  font-size: 1.0em;
+  left:10px;
+}
+p{
+  color:#817e7e;
+  position: relative;
+  left:50px;
+  text-align: left;
+  font-size: 0.7em;
+}
 .header {
     text-align: center;
     margin-top: 4em;
