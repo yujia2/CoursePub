@@ -34,11 +34,13 @@
 
 
 
+
+
 	<div class="searchBar">
 		<h3>Search</h3>
 		<form> 
-		    <input type="text" placeholder="Search..." required size="80">
-            <input type="button" value="GO">
+		    <input id = "searchText" type="text" placeholder="Search..." required size="80">
+            <input type="button" value="GO" onClick = "showSearchResult()">
 		</form>
 		<br>
 		<h3>Post a Quetion</h3>
@@ -49,11 +51,32 @@
 
 		<button type="button" onclick="alert(' Post Successfully!')">Post!</button>
 
+<script language = "Javascript">
+				function showSearchResult(){
+					var question = document.getElementById('searchText').value;
+					var target = document.getElementById('searchqa');
+					target.innerHTML = question;
+				}
 
-	</div>
+
+
+			</script>
+
 	<div id = "left">
 		<h2>Q&A</h2>
 		<br>
+		
+				<div>
+		<input class="animate" type="radio" name="question" id="q0"/>
+		<label  id = "searchqa" class="animate" for="q0">Q: What is Lorem Ipsum?</label>
+		<p class="response animate">A: Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged. It was popularised in the 1960s with the release of Letraset sheets containing Lorem Ipsum passages, and more recently with desktop publishing software like Aldus PageMaker including versions of Lorem Ipsum.
+		<br/><br/><br/>
+		<textarea placeholder="Post your Answer..." rows="4" cols="80"></textarea>
+		<button type="button" onclick="alert(' Post Successfully!')">Post!</button>
+		</p>
+		</div>
+		
+		
 		<input class="animate" type="radio" name="question" id="q1"/>
 		<label class="animate" for="q1">Q: What is Lorem Ipsum?</label>
 		<p class="response animate">A: Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged. It was popularised in the 1960s with the release of Letraset sheets containing Lorem Ipsum passages, and more recently with desktop publishing software like Aldus PageMaker including versions of Lorem Ipsum.
