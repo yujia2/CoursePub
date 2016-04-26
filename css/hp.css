@@ -8,12 +8,22 @@
 }
 
 body{
-  background: #D7423C;
-  box-sizing: border-box;
+  background: #f4f4f4;
+    font-family: 'Quicksand', comic;
 }
 section{
   padding: 5% 5%;
 }
+
+h1{
+    font-size: 80px;
+    color: #fff;
+    text-align: left;
+    margin-top: 0px;
+    background-color: #c0b283;
+
+}
+
 
 
 #left{
@@ -28,7 +38,8 @@ section{
 }
 
 .searchBar{
-    padding: 5% 5%;
+    padding: 2% 5%;
+
 }
 
 
@@ -39,6 +50,8 @@ section{
 
 .dropdown{
     float: right;
+    position:relative;
+
 }
 
 
