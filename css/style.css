@@ -34,7 +34,15 @@ body{
 
 select{
     width:350px;
-    text-align: left;
+
+      background: transparent;
+   padding: 3px;
+   font-size: 14px;
+   height: 30px;
+   overflow: hidden;
+   background: url(new_arrow.png) no-repeat right #dbdbdb;
+   border: 1px solid #ccc;
+float: left;
 
 }
 
@@ -64,15 +72,16 @@ button:hover {
   background-image: linear-gradient(to bottom, #c9a55c, #d9a234);
   text-decoration: none;
 }
+
+button a{
+
+color:#ffffff;;  
+}
 h4{
   position: relative;
   font-family: "Times New Roman", Times, serif;
   font-size: 1.0em;
   left:10px;
-}
-button a{
-
-color:#ffffff;;  
 }
 p{
   color:#817e7e;
@@ -123,7 +132,7 @@ p{
     margin-right: 0.5em;
 }
 .login-form form input[type="text"],.login-form form textarea {
-    width: 75%;
+    width: 70%;
     padding: 4px;
     font-size: 1em;
     font-weight: 400;
