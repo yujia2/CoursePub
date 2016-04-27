@@ -28,8 +28,8 @@ nav.horizontal ul li{	display: inline-block;}/* horizontal menu */
 img{max-width:100%;}
 /*end reset*/
 body{
-	font-family: 'Ubuntu', sans-serif;
-	background:#c3a479;
+    font-family: 'Quicksand', comic;
+	background: #f4f4f4;
 }
 
 select{
@@ -94,10 +94,12 @@ p{
     text-align: center;
     margin-top: 4em;
 }
-.header h1 {
-    font-size: 3.5em;
+h1 {
+    font-size: 80px;
     color: #fff;
-    font-weight: 400;
+    text-align: left;
+    margin-top: 0px;
+    background-color: #c0b283;
 }
 .main-section {
     width: 35%;

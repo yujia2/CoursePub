@@ -8,7 +8,7 @@
 }
 
 body{
-  background: #f4f4f4;
+    background: #f4f4f4;
     font-family: 'Quicksand', comic;
 }
 section{
@@ -21,16 +21,12 @@ h1{
     text-align: left;
     margin-top: 0px;
     background-color: #c0b283;
-
 }
 
 
-
 #left{
-    width: 800px;
-    float: left;
-    padding: 0% 5%;
-
+    width: 50%;
+    position: absolute;
 }
 
 #left h2{
@@ -38,12 +34,12 @@ h1{
 }
 #right
 {
-    margin-left: 200px; /* Change this to whatever the width of your left column is*/
     background-color: rgba(248, 247, 216, 0.3);
-    position:relative;
+    width: 40%;
+    right: 20px;
+    padding: 0% 5%;
     background-size: 80px 60px;
-    text-align: left;
-    margin-left: 760px;
+    position: absolute;
     
 
 }
