@@ -169,9 +169,18 @@ function addAccordian() {
 
     var qtitle = document.getElementById('qtitle').value;
     var qbody = document.getElementById('qbody').value;
+    var tagStr = document.getElementById('tagList').value; 
+    var tagList = tagStr.split(,);
     var count = addAccordian.counter++;
 
-    var newDiv = "<div class=\"panel panel-default\"> <div class=\"panel-heading\"> <h4 class=\"panel-title\"> <a data-toggle=\"collapse\" data-parent=\"#accordion\" href=\"#collapse" + count + "\">" + qtitle + "</a></h4> </div> </div> <div id=\"collapse" + count + "\" class=\"panel-collapse collapse\"> <div class=\"panel\-body\"><h4 id=\"Q\"> Q </h4>" + qbody + "</div><hr> <br/><br/><br/> <textarea placeholder=\"Post your Answer...\" rows=\"4\" cols=\"80\"></textarea> <button id=\"postAnswer\" type=\"button\" onclick=\"alert(' Post Successfully!')\">Post!</button></div></div>"
+    var arrayLength = tagList.length;
+    var tagString = "";
+    for (var i = 0; i < arrayLength; i++) 
+    {
+        tagString += "<a href=\"" + tagString[i] + ".html\"><h6 id=\"tag\">" + tagString[i] + "</h6></a>";
+    }
+
+    var newDiv = "<div class=\"panel panel-default\"> <div class=\"panel-heading\"> <h4 class=\"panel-title\"> <a data-toggle=\"collapse\" data-parent=\"#accordion\" href=\"#collapse" + count + "\">" + qtitle + "</a></h4>" + tagString + " </div> </div> <div id=\"collapse" + count + "\" class=\"panel-collapse collapse\"> <div class=\"panel\-body\"><h4 id=\"Q\"> Q </h4>" + qbody + "</div><hr> <br/><br/><br/> <textarea placeholder=\"Post your Answer...\" rows=\"4\" cols=\"80\"></textarea> <button id=\"postAnswer\" type=\"button\" onclick=\"alert(' Post Successfully!')\">Post!</button></div></div>"
     
     //var newDiv = "<div class=\"me\"><h3>Q4" + qtitle + "</h3><div>New Content</div></div>";
     $('.panel-group').append(newDiv);
