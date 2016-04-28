@@ -48,13 +48,13 @@
             <input type="button" value="GO" onClick = "showSearchResult()">
 		</form>
 		<br>
-		<h3>Post a Quetion</h3>
+		<h3>Post a Question</h3>
 
-		<textarea placeholder="Question Title..." rows="1" cols="80"></textarea>
+		<textarea id="qtitle" placeholder="Question Title..." rows="1" cols="80"></textarea>
 		<br>
-		<textarea placeholder="Write the Question..." rows="6" cols="80"></textarea>
+		<textarea id="qbody" placeholder="Write the Question..." rows="6" cols="80"></textarea>
 
-		<button type="button" onclick="alert(' Post Successfully!')">Post!</button>
+        <button type="button" id="postButton"}>Post!</button>
 
 <script language = "Javascript">
 				function showSearchResult(){
@@ -70,7 +70,7 @@
     <div class="panel panel-default">
       <div class="panel-heading">
         <h4 class="panel-title">
-            <a data-toggle="collapse" data-parent="#accordion" href="#collapse1">3 credit online course </a><h6 id="tag">CS465</h6><h6 id="tag">CS412</h6>
+            <a data-toggle="collapse" data-parent="#accordion" href="#collapse1">3 credit online course </a><a href="CS465.html"><h6 id="tag">CS465</h6></a><a href="CS412.html"><h6 id="tag">CS412</h6></a>
         </h4>
       </div>
       <div id="collapse1" class="panel-collapse collapse">
@@ -84,7 +84,7 @@
     <div class="panel panel-default">
       <div class="panel-heading">
         <h4 class="panel-title">
-            <a data-toggle="collapse" data-parent="#accordion" href="#collapse2">Internship opportunity with DatosIO </a><h6 id="tag">CS425</h6><h6 id="tag">CS525</h6>
+            <a data-toggle="collapse" data-parent="#accordion" href="#collapse2">Internship opportunity with DatosIO </a><a href="CS425.html"><h6 id="tag">CS425</h6></a><a href="CS525.html"><h6 id="tag">CS525</h6></a>
         </h4>
       </div>
       <div id="collapse2" class="panel-collapse collapse">
@@ -100,7 +100,7 @@
     <div class="panel panel-default">
       <div class="panel-heading">
         <h4 class="panel-title">
-            <a data-toggle="collapse" data-parent="#accordion" href="#collapse3">CS423 Vs CS425 for Job hunting </a><h6 id="tag">CS423</h6><h6 id="tag">CS425</h6>
+            <a data-toggle="collapse" data-parent="#accordion" href="#collapse3">CS423 Vs CS425 for Job hunting </a><a href="CS423.html"><h6 id="tag">CS423</h6></a><a href="CS425.html"><h6 id="tag">CS425</h6></a>
         </h4>
       </div>
       <div id="collapse3" class="panel-collapse collapse">
@@ -118,7 +118,7 @@
     <div class="panel panel-default">
       <div class="panel-heading">
         <h4 class="panel-title">
-            <a data-toggle="collapse" data-parent="#accordion" href="#collapse4">Is it worth buying the book for CS425/ECE 428 distributed systems?? </a><h6 id="tag">CS425</h6><h6 id="tag">ECE428</h6>
+            <a data-toggle="collapse" data-parent="#accordion" href="#collapse4">Is it worth buying the book for CS425/ECE 428 distributed systems?? </a><a href="CS425.html"><h6 id="tag">CS425</h6></a><a href="ECE428.html"><h6 id="tag">ECE428</h6></a>
         </h4>
       </div>
       <div id="collapse4" class="panel-collapse collapse">
@@ -152,6 +152,27 @@
 <script>
 // Get the button, and when the user clicks on it, execute myFunction
 document.getElementById("myBtn").onclick = function() {myFunction()};
+
+// Get the button, and when the user clicks on it, execute myFunction
+document.getElementById("postButton").onclick = function() {addAccordian()};
+
+/* myFunction toggles between adding and removing the show class, which is used to hide and show the dropdown content */
+function addAccordian() {
+    // alert the user
+    alert("Question posted successfully!");
+
+    var qtitle = document.getElementById('qtitle').value;
+    var qbody = document.getElementById('qbody').value;
+    var count = addAccordian.counter++;
+
+    var newDiv = "<div class=\"panel panel-default\"> <div class=\"panel-heading\"> <h4 class=\"panel-title\"> <a data-toggle=\"collapse\" data-parent=\"#accordion\" href=\"#collapse" + count + "\">" + qtitle + "</a></h4> </div> </div> <div id=\"collapse" + count + "\" class=\"panel-collapse collapse\"> <div class=\"panel\-body\"><h4 id=\"Q\"> Q </h4>" + qbody + "</div><hr> <br/><br/><br/> <textarea placeholder=\"Post your Answer...\" rows=\"4\" cols=\"80\"></textarea> <button id=\"postAnswer\" type=\"button\" onclick=\"alert(' Post Successfully!')\">Post!</button></div></div>"
+    
+    //var newDiv = "<div class=\"me\"><h3>Q4" + qtitle + "</h3><div>New Content</div></div>";
+    $('.panel-group').append(newDiv);
+    $('.panel-group').accordion("refresh");
+}
+
+addAccordian.counter = 8;
 
 /* myFunction toggles between adding and removing the show class, which is used to hide and show the dropdown content */
 function myFunction() {
