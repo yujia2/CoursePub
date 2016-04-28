@@ -45,7 +45,7 @@ section{
 }
 
 #left{
-    width: 50%;
+    width: 610px;
     position: absolute;
     line-height: 2em;
     background-color: rgba(103, 182, 208, 0.2);
@@ -71,8 +71,8 @@ textarea {
 #right
 {
     background-color: rgba(208, 103, 143, 0.2);
-    width: 38%;
-    right: 20px;
+    width: 450px;
+    right: 30px;
     padding: 0% 5%;
     background-size: 60%;
     position: relative;
@@ -100,7 +100,7 @@ textarea {
 
 .searchBar h3{
     background-color: rgba(255, 153, 51, 0.4);
-    width: 49.5%;
+    width: 580px;
     border-width:medium;
     margin-left: 10px;
 }
@@ -110,13 +110,13 @@ textarea {
     font-style: italic;
     font-family: "muli italic", sans-serif;
     margin-left: -50px;
-    width: 110%;
+    width: 400px;
 
 }
 
 #right h3{
-    margin-left: -50px;
-    width: 130%;
+    margin-left: -57px;
+    width: 450px;
 }
 
 /*****************************************/
