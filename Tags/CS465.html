@@ -1,0 +1,170 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>CS465</title>
+	<link rel="stylesheet" href="../css/hp.css">
+      <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="http://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css">
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.0/jquery.min.js"></script>
+  <script src="http://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/js/bootstrap.min.js"></script>
+</head>
+<body>
+
+<div class="myheading">
+    <h1>CoursePub</h1>
+</div>
+<section>
+
+
+	<div class="dropdown">
+	<button id="myBtn" class="dropbtn">Setting</button>
+	  <div id="myDropdown" class="dropdown-content">
+	    <a href="#about">Account Setting</a>
+	    <a href="#contact">Help</a>
+	    <a href="login.html">Log Out</a>
+	  </div>
+	</div>
+
+
+	<div class="dropdown">
+	<button id="myBtn2" class="dropbtn">Hello!</button>
+	  <div id="myDropdown2" class="dropdown-content">
+	    <a href="#home">Notification1</a>
+	    <a href="#about">Notification2</a>
+	    <a href="#contact">...</a>
+	    <a href="#LogOut">...</a>
+	  </div>
+	</div>
+
+
+
+
+
+
+	<div class="searchBar">
+		<h3>Search</h3>
+		<form> 
+		    <input id = "searchText" type="text" placeholder="Search..." required size="80">
+            <input type="button" value="GO" onClick = "showSearchResult()">
+		</form>
+		<br>
+		<h3>Post a Quetion</h3>
+
+		<textarea placeholder="Question Title..." rows="1" cols="80"></textarea>
+		<br>
+		<textarea placeholder="Write the Question..." rows="6" cols="80"></textarea>
+
+		<button type="button" onclick="alert(' Post Successfully!')">Post!</button>
+
+<script language = "Javascript">
+				function showSearchResult(){
+					var question = document.getElementById('searchText').value;
+					var target = document.getElementById('searchqa');
+					target.innerHTML = question;
+				}
+			</script>
+
+<div id = "left" class="container">
+<h2>CS465</h2>
+  <div class="panel-group" id="accordion">
+    <div class="panel panel-default">
+      <div class="panel-heading">
+        <h4 class="panel-title">
+            <a data-toggle="collapse" data-parent="#accordion" href="#collapse1">3 credit online course </a><h6 id="tag">CS465</h6><h6 id="tag">CS412</h6>
+        </h4>
+      </div>
+      <div id="collapse1" class="panel-collapse collapse">
+          <div class="panel-body"><h4 id="Q"> Q </h4>I am looking for a 3 credit online course, which one do you recommend, CS465 or CS412?</div><hr>
+		<br/><br/><br/>
+		<textarea placeholder="Post your Answer..." rows="4" cols="80"></textarea>
+		<button id="postAnswer" type="button" onclick="alert(' Post Successfully!')">Post!</button>
+      </div>
+    </div>
+
+    <div class="panel panel-default">
+      <div class="panel-heading">
+        <h4 class="panel-title">
+            <a data-toggle="collapse" data-parent="#accordion" href="#collapse2">How is the workload in the User Interface Design (CS465)? </a><h6 id="tag">CS465</h6>
+        </h4>
+      </div>
+      <div id="collapse2" class="panel-collapse collapse">
+          <div class="panel-body"><h4 id="Q"> Q </h4>How is the workload in the User Interface Design (CS465)?<hr>
+          <h4 id="Q"> A </h4>Honestly, 465 is more of the real world design for your average everyday person. Everything people say about stuff like interviews, analysis, surveys, etc. is true. And quite frankly, if you want to learn how to actually design apps that almost everybody can use, these skills are essential. The class is more about psychology, as it should be. </div>
+		<br/><br/><br/>
+		<textarea placeholder="Post your Answer..." rows="4" cols="80"></textarea>
+		<button id="postAnswer" type="button" onclick="alert(' Post Successfully!')">Post!</button>
+      </div>
+      </div>
+
+  </div> 
+</div>
+
+	<div id = "right">
+		<h2 style="color:#800000" align="left"> HOT TOPICS</h2>
+		<div style=" height: 11px;">Describe the city you live in</div>
+		<br/><br/>
+		<div style=" height: 11px;">How is Math 101?</div>
+		<br/><br/>
+		<div style=" height: 11px;">Best professor in History department?</div>
+		<br/><br/>
+		<div style=" height: 11px;">Is there any class harder than ece 391?</div>
+		<br/><br/>
+		<div style=" height: 11px;">Poli Sci 111 next semester, any one wanna join?</div>
+
+	</div>
+</section>
+
+
+<script>
+// Get the button, and when the user clicks on it, execute myFunction
+document.getElementById("myBtn").onclick = function() {myFunction()};
+
+/* myFunction toggles between adding and removing the show class, which is used to hide and show the dropdown content */
+function myFunction() {
+    document.getElementById("myDropdown").classList.toggle("show");
+}
+
+// Close the dropdown if the user clicks outside of it
+window.onclick = function(event) {
+  if (!event.target.matches('.dropbtn')) {
+
+    var dropdowns = document.getElementsByClassName("dropdown-content");
+    var i;
+    for (i = 0; i < dropdowns.length; i++) {
+      var openDropdown = dropdowns[i];
+      if (openDropdown.classList.contains('show')) {
+        openDropdown.classList.remove('show');
+      }
+    }
+  }
+}
+</script>
+
+<script>
+// Get the button, and when the user clicks on it, execute myFunction
+document.getElementById("myBtn2").onclick = function() {myFunction2()};
+
+/* myFunction toggles between adding and removing the show class, which is used to hide and show the dropdown content */
+function myFunction2() {
+    document.getElementById("myDropdown2").classList.toggle("show");
+}
+
+// Close the dropdown if the user clicks outside of it
+window.onclick = function(event) {
+  if (!event.target.matches('.dropbtn2')) {
+
+    var dropdowns = document.getElementsByClassName("dropdown-content2");
+    var i;
+    for (i = 0; i < dropdowns.length; i++) {
+      var openDropdown = dropdowns[i];
+      if (openDropdown.classList.contains('show')) {
+        openDropdown.classList.remove('show');
+      }
+    }
+  }
+}
+</script>
+
+
+</body>
+</html>

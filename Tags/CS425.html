@@ -1,8 +1,8 @@
 <!DOCTYPE html>
 <html>
 <head>
-	<title>User homepage</title>
-	<link rel="stylesheet" href="css/hp.css">
+	<title>CS425</title>
+	<link rel="stylesheet" href="../css/hp.css">
       <meta name="viewport" content="width=device-width, initial-scale=1">
     <link rel="stylesheet" href="http://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css">
   <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.0/jquery.min.js"></script>
@@ -12,28 +12,29 @@
 
 <div class="myheading">
     <h1>CoursePub</h1>
-
-     <div class="dropdown">
-  <button id="myBtn2" class="dropbtn">Hello!</button>
-    <div id="myDropdown2" class="dropdown-content">
-      <a href="#home">Notification1</a>
-      <a href="#about">Notification2</a>
-      <a href="#contact">...</a>
-      <a href="#LogOut">...</a>
-
-    </div><button id="myBtn" class="dropbtn">Setting</button>
-    <div id="myDropdown" class="dropdown-content">
-      <a href="#about">Account Setting</a>
-      <a href="#contact">Help</a>
-      <a href="login.html">Log Out</a>
-    </div>
-
-  
-  </div>
 </div>
-
-
 <section>
+
+
+	<div class="dropdown">
+	<button id="myBtn" class="dropbtn">Setting</button>
+	  <div id="myDropdown" class="dropdown-content">
+	    <a href="#about">Account Setting</a>
+	    <a href="#contact">Help</a>
+	    <a href="login.html">Log Out</a>
+	  </div>
+	</div>
+
+
+	<div class="dropdown">
+	<button id="myBtn2" class="dropbtn">Hello!</button>
+	  <div id="myDropdown2" class="dropdown-content">
+	    <a href="#home">Notification1</a>
+	    <a href="#about">Notification2</a>
+	    <a href="#contact">...</a>
+	    <a href="#LogOut">...</a>
+	  </div>
+	</div>
 
 
 
@@ -45,19 +46,15 @@
 		<form> 
 		    <input id = "searchText" type="text" placeholder="Search..." required size="80">
             <input type="button" value="GO" onClick = "showSearchResult()">
-
 		</form>
 		<br>
-		<h3>Post a Question</h3>
+		<h3>Post a Quetion</h3>
 
-		<textarea id="qtitle" placeholder="Question Title..." rows="1" cols="80"></textarea>
+		<textarea placeholder="Question Title..." rows="1" cols="80"></textarea>
 		<br>
-        <textarea id="tagList" placeholder="Type Tags (Seperate by comma)" rows="1" cols="80"></textarea>
-        <br>
-		<textarea id="qbody" placeholder="Write the Question..." rows="6" cols="80"></textarea>
-        <br>
+		<textarea placeholder="Write the Question..." rows="6" cols="80"></textarea>
 
-        <button type="button" id="postButton"}>Post!</button>
+		<button type="button" onclick="alert(' Post Successfully!')">Post!</button>
 
 <script language = "Javascript">
 				function showSearchResult(){
@@ -68,26 +65,12 @@
 			</script>
 
 <div id = "left" class="container">
-<h2>Q&A</h2>
+<h2>CS425</h2>
   <div class="panel-group" id="accordion">
     <div class="panel panel-default">
       <div class="panel-heading">
         <h4 class="panel-title">
-            <a data-toggle="collapse" data-parent="#accordion" href="#collapse1">3 credit online course </a><a href="Tags/CS465.html"><h6 id="tag">CS465</h6></a><a href="Tags/CS412.html"><h6 id="tag">CS412</h6></a>
-        </h4>
-      </div>
-      <div id="collapse1" class="panel-collapse collapse">
-          <div class="panel-body"><h4 id="Q"> Q </h4>I am looking for a 3 credit online course, which one do you recommend, CS465 or CS412?</div><hr>
-		<br/><br/><br/>
-		<textarea placeholder="Post your Answer..." rows="4" cols="80"></textarea>
-		<button id="postAnswer" type="button" onclick="alert(' Post Successfully!')">Post!</button>
-      </div>
-    </div>
-
-    <div class="panel panel-default">
-      <div class="panel-heading">
-        <h4 class="panel-title">
-            <a data-toggle="collapse" data-parent="#accordion" href="#collapse2">Internship opportunity with DatosIO </a><a href="Tags/CS425.html"><h6 id="tag">CS425</h6></a><a href="CS525.html"><h6 id="tag">CS525</h6></a>
+            <a data-toggle="collapse" data-parent="#accordion" href="#collapse2">Internship opportunity with DatosIO </a><h6 id="tag">CS425</h6><h6 id="tag">CS525</h6>
         </h4>
       </div>
       <div id="collapse2" class="panel-collapse collapse">
@@ -103,7 +86,7 @@
     <div class="panel panel-default">
       <div class="panel-heading">
         <h4 class="panel-title">
-            <a data-toggle="collapse" data-parent="#accordion" href="#collapse3">CS423 Vs CS425 for Job hunting </a><a href="Tags/CS423.html"><h6 id="tag">CS423</h6></a><a href="Tags/CS425.html"><h6 id="tag">CS425</h6></a>
+            <a data-toggle="collapse" data-parent="#accordion" href="#collapse3">CS423 Vs CS425 for Job hunting </a><h6 id="tag">CS423</h6><h6 id="tag">CS425</h6>
         </h4>
       </div>
       <div id="collapse3" class="panel-collapse collapse">
@@ -121,7 +104,7 @@
     <div class="panel panel-default">
       <div class="panel-heading">
         <h4 class="panel-title">
-            <a data-toggle="collapse" data-parent="#accordion" href="#collapse4">Is it worth buying the book for CS425/ECE 428 distributed systems?? </a><a href="Tags/CS425.html"><h6 id="tag">CS425</h6></a><a href="Tags/ECE428.html"><h6 id="tag">ECE428</h6></a>
+            <a data-toggle="collapse" data-parent="#accordion" href="#collapse4">Is it worth buying the book for CS425/ECE 428 distributed systems?? </a><h6 id="tag">CS425</h6><h6 id="tag">ECE428</h6>
         </h4>
       </div>
       <div id="collapse4" class="panel-collapse collapse">
@@ -137,24 +120,17 @@
 </div>
 
 	<div id = "right">
-		<h3 background-color="rgba(255, 153, 51, 0.4);"> HOT TOPICS</h3>
-		<div id = "hot" style=" height: 11px;">-Describe the city you live in</div>
-		<br><br>
-		<div id = "hot" style=" height: 11px;">-How is Math 101?</div>
-		<br/><br>
-		<div id = "hot" style=" height: 11px;">-Best professor in History department?</div>
-		<br/><br>
-		<div id = "hot" style=" height: 11px;">-Is there any class harder than ece 391?</div>
-		<br/><br>
-		<div id = "hot" style=" height: 11px;">-Poli Sci 111 next semester, any one wanna join?</div>
-    <br/><br>
-    <div id = "hot" style=" height: 11px;">-Poli Sci 111 next semester, any one wanna join?</div>
-    <br/><br>
-    <div id = "hot" style=" height: 11px;">-Poli Sci 111 next semester, any one wanna join?</div>
-    <br/><br>
-    <div id = "hot" style=" height: 11px;">-Poli Sci 111 next semester, any one wanna join?</div>
-    <br/><br>
-    
+		<h2 style="color:#800000" align="left"> HOT TOPICS</h2>
+		<div style=" height: 11px;">Describe the city you live in</div>
+		<br/><br/>
+		<div style=" height: 11px;">How is Math 101?</div>
+		<br/><br/>
+		<div style=" height: 11px;">Best professor in History department?</div>
+		<br/><br/>
+		<div style=" height: 11px;">Is there any class harder than ece 391?</div>
+		<br/><br/>
+		<div style=" height: 11px;">Poli Sci 111 next semester, any one wanna join?</div>
+
 	</div>
 </section>
 
@@ -162,37 +138,6 @@
 <script>
 // Get the button, and when the user clicks on it, execute myFunction
 document.getElementById("myBtn").onclick = function() {myFunction()};
-
-// Get the button, and when the user clicks on it, execute myFunction
-document.getElementById("postButton").onclick = function() {addAccordian()};
-
-/* myFunction toggles between adding and removing the show class, which is used to hide and show the dropdown content */
-function addAccordian() {
-    // alert the user
-    alert("Question posted successfully!");
-
-    var qtitle = document.getElementById('qtitle').value;
-    var qbody = document.getElementById('qbody').value;
-    var tagStr = document.getElementById('tagList').value; 
-    var tagList = tagStr.split(",");
-    var count = addAccordian.counter++;
-
-    var arrayLength = tagList.length;
-    var tagString = "";
-    for (var i = 0; i < arrayLength; i++) 
-    {
-        alert(tagList[i]);
-        tagString += "<a href=\"Tags/" + tagList[i] + ".html\"><h6 id=\"tag\">" + tagList[i] + "</h6></a>";
-    }
-
-    var newDiv = "<div class=\"panel panel-default\"> <div class=\"panel-heading\"> <h4 class=\"panel-title\"> <a data-toggle=\"collapse\" data-parent=\"#accordion\" href=\"#collapse" + count + "\">" + qtitle + "</a></h4>" + tagString + " </div> </div> <div id=\"collapse" + count + "\" class=\"panel-collapse collapse\"> <div class=\"panel\-body\"><h4 id=\"Q\"> Q </h4>" + qbody + "</div><hr> <br/><br/><br/> <textarea placeholder=\"Post your Answer...\" rows=\"4\" cols=\"80\"></textarea> <button id=\"postAnswer\" type=\"button\" onclick=\"alert(' Post Successfully!')\">Post!</button></div></div>"
-    
-    //var newDiv = "<div class=\"me\"><h3>Q4" + qtitle + "</h3><div>New Content</div></div>";
-    $('.panel-group').append(newDiv);
-    $('.panel-group').accordion("refresh");
-}
-
-addAccordian.counter = 8;
 
 /* myFunction toggles between adding and removing the show class, which is used to hide and show the dropdown content */
 function myFunction() {
@@ -221,7 +166,6 @@ document.getElementById("myBtn2").onclick = function() {myFunction2()};
 
 /* myFunction toggles between adding and removing the show class, which is used to hide and show the dropdown content */
 function myFunction2() {
-
     document.getElementById("myDropdown2").classList.toggle("show");
 }
 
