@@ -12,29 +12,28 @@
 
 <div class="myheading">
     <h1>CoursePub</h1>
+
+     <div class="dropdown">
+  <button id="myBtn2" class="dropbtn">Hello!</button>
+    <div id="myDropdown2" class="dropdown-content">
+      <a href="#home">Notification1</a>
+      <a href="#about">Notification2</a>
+      <a href="#contact">...</a>
+      <a href="#LogOut">...</a>
+
+    </div><button id="myBtn" class="dropbtn">Setting</button>
+    <div id="myDropdown" class="dropdown-content">
+      <a href="#about">Account Setting</a>
+      <a href="#contact">Help</a>
+      <a href="login.html">Log Out</a>
+    </div>
+
+  
+  </div>
 </div>
+
+
 <section>
-
-
-	<div class="dropdown">
-	<button id="myBtn" class="dropbtn">Setting</button>
-	  <div id="myDropdown" class="dropdown-content">
-	    <a href="#about">Account Setting</a>
-	    <a href="#contact">Help</a>
-	    <a href="login.html">Log Out</a>
-	  </div>
-	</div>
-
-
-	<div class="dropdown">
-	<button id="myBtn2" class="dropbtn">Hello!</button>
-	  <div id="myDropdown2" class="dropdown-content">
-	    <a href="#home">Notification1</a>
-	    <a href="#about">Notification2</a>
-	    <a href="#contact">...</a>
-	    <a href="#LogOut">...</a>
-	  </div>
-	</div>
 
 
 
@@ -134,17 +133,24 @@
 </div>
 
 	<div id = "right">
-		<h2 style="color:#800000" align="left"> HOT TOPICS</h2>
-		<div style=" height: 11px;">Describe the city you live in</div>
-		<br/><br/>
-		<div style=" height: 11px;">How is Math 101?</div>
-		<br/><br/>
-		<div style=" height: 11px;">Best professor in History department?</div>
-		<br/><br/>
-		<div style=" height: 11px;">Is there any class harder than ece 391?</div>
-		<br/><br/>
-		<div style=" height: 11px;">Poli Sci 111 next semester, any one wanna join?</div>
-
+		<h3 background-color="rgba(255, 153, 51, 0.4);"> HOT TOPICS</h3>
+		<div id = "hot" style=" height: 11px;">-Describe the city you live in</div>
+		<br><br>
+		<div id = "hot" style=" height: 11px;">-How is Math 101?</div>
+		<br/><br>
+		<div id = "hot" style=" height: 11px;">-Best professor in History department?</div>
+		<br/><br>
+		<div id = "hot" style=" height: 11px;">-Is there any class harder than ece 391?</div>
+		<br/><br>
+		<div id = "hot" style=" height: 11px;">-Poli Sci 111 next semester, any one wanna join?</div>
+    <br/><br>
+    <div id = "hot" style=" height: 11px;">-Poli Sci 111 next semester, any one wanna join?</div>
+    <br/><br>
+    <div id = "hot" style=" height: 11px;">-Poli Sci 111 next semester, any one wanna join?</div>
+    <br/><br>
+    <div id = "hot" style=" height: 11px;">-Poli Sci 111 next semester, any one wanna join?</div>
+    <br/><br>
+    
 	</div>
 </section>
 
@@ -201,6 +207,7 @@ document.getElementById("myBtn2").onclick = function() {myFunction2()};
 
 /* myFunction toggles between adding and removing the show class, which is used to hide and show the dropdown content */
 function myFunction2() {
+
     document.getElementById("myDropdown2").classList.toggle("show");
 }
 
