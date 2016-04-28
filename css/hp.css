@@ -14,14 +14,25 @@ body{
 section{
   padding: 5% 5%;
 }
+.myheading{
+    background-color: #c0b283;
+    padding: 10px 10px;
+    margin-top: -45px;
+}
+
+
 
 .myheading h1{
     font-size: 80px;
     color: #fff;
     text-align: left;
-    margin-top: 0px;
+    margin-top: 25px;
+    margin-left: 0px;
     background-color: #c0b283;
+    font-family: 'Quicksand', comic;
 }
+
+
 
 #tag{
     border-radius: 25px;
@@ -72,14 +83,15 @@ textarea {
 #right h2{
     background-color: rgba(255, 153, 51, 0.4);
     border-width:medium;
+
 }
 
 .searchBar{
-    width:50%;
     padding: 2% 5%;
     background-color: rgba(248, 247, 216, 0.3);
     width: 100%;
-        height: 100%;
+    height: 100%;
+    position: absolute;
        
 
 
@@ -88,10 +100,13 @@ textarea {
 #right #hot{
     font-style: italic;
     font-family: "muli italic", sans-serif;
+    margin-left: -50px;
 
 }
 
-
+#right h2{
+    margin-left: -50px;
+}
 
 /*****************************************/
 /* for settings dropdown*/
@@ -99,6 +114,7 @@ textarea {
 .dropdown{
     float: right;
     position:relative;
+    margin-top: -50px;
 
 }
 
