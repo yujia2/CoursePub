@@ -13,6 +13,7 @@ section{
     background-color: #c0b283;
     padding: 10px 10px;
     margin-top: -45px;
+    z-index:1;
 }
 
 
@@ -126,6 +127,7 @@ textarea {
     float: right;
     position:relative;
     margin-top: -50px;
+    z-index:1;
 
 }
 
