@@ -112,7 +112,7 @@ h1 {
 	    border-radius: 5px;
 }
 .login-form h2 {
-    font-size: 1.6em;
+    font-size: 30px;
     text-transform: capitalize;
 	    color: #000;
 }
@@ -126,7 +126,7 @@ h1 {
 .login-form ul li.text-info {
     width: 18%;
     color: #000;
-    font-size: 1em;
+    font-size: 20px;
     font-weight: 400;
 	float: left;
 	padding-top:.5em;
