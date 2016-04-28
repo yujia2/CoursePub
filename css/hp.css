@@ -1,19 +1,11 @@
 @import url(http://fonts.googleapis.com/css?family=Montserrat:400,700);
 
 
-body{
-padding: 0;
-    margin: 0;
-    box-sizing: border-box;
-    font-family: 'Montserrat', sans-serif;
-    line-height: 1.5em
-}
-    background-size: 100% 950px;
+    
     background-color: rgba(248, 247, 216, 0.3);
-    font-family: 'Quicksand', comic;
-    width: 100%;
-    height: 100%;
-}
+
+
+
 section{
   padding: 5% 5%;
 }
@@ -56,11 +48,13 @@ section{
     width: 50%;
     position: absolute;
     line-height: 2em;
-    background-color: rgba(248, 247, 216, 0.3);
+    background-color: rgba(103, 182, 208, 0.2);
+    margin-top: 10px;
 }
 
 textarea {    
     position: relative;
+    margin-left: 10px;
 
 }
 
@@ -72,23 +66,21 @@ textarea {
 
 #left h2{
     background-color: rgba(255, 153, 51, 0.4);
+    margin-left: -5px;
 }
 #right
 {
-    background-color: rgba(248, 247, 216, 0.3);
-    width: 40%;
+    background-color: rgba(208, 103, 143, 0.2);
+    width: 38%;
     right: 20px;
     padding: 0% 5%;
-    background-size: 80px 80px;
-    position: absolute;
+    background-size: 60%;
+    position: relative;
+    margin-top: -322px;
+    margin-left: 750px;
 
 }
 
-#right h2{
-    background-color: rgba(255, 153, 51, 0.4);
-    border-width:medium;
-
-}
 
 .searchBar{
     padding: 2% 5%;
@@ -96,25 +88,35 @@ textarea {
     width: 100%;
     height: 100%;
     position: absolute;
-       
+}
 
+.searchBar form{
+    margin-left: 10px;
+}
 
+.searchBar textarea{
+    margin-left: 10px;
 }
 
 .searchBar h3{
     background-color: rgba(255, 153, 51, 0.4);
-    width: 55%;
+    width: 54%;
+    border-width:medium;
+    margin-left: 10px;
 }
+
 
 #right #hot{
     font-style: italic;
     font-family: "muli italic", sans-serif;
     margin-left: -50px;
+    width: 110%;
 
 }
 
-#right h2{
+#right h3{
     margin-left: -50px;
+    width: 130%;
 }
 
 /*****************************************/
