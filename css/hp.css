@@ -28,7 +28,9 @@ section{
     font-family: 'Quicksand', comic;
 }
 
-
+#postButton{
+    margin-left: 10px;
+}
 
 #tag{
     border-radius: 25px;
