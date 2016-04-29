@@ -16,10 +16,9 @@
      <div class="dropdown">
   <button id="myBtn2" class="dropbtn">Hello!</button>
     <div id="myDropdown2" class="dropdown-content">
-      <a href="#home">Notification1</a>
-      <a href="#about">Notification2</a>
-      <a href="#contact">...</a>
-      <a href="#LogOut">...</a>
+      <a href="#home">Message Notification (2)</a>
+      <a href="#about">Q&A Notification (1)</a>
+      <a href="#contact">Subscribe Notification (1)</a>
 
     </div><button id="myBtn" class="dropbtn">Setting</button>
     <div id="myDropdown" class="dropdown-content">
@@ -43,18 +42,18 @@
 	<div class="searchBar">
 		<h3>Search</h3>
 		<form> 
-		    <input id = "searchText" type="text" placeholder="Search..." required size="75">
+		    <input id = "searchText" type="text" placeholder="Search..." required size="89">
             <input type="button" value="GO" onClick = "showSearchResult()">
 
 		</form>
 		<br>
 		<h3>Post a Question</h3>
 
-		<textarea id="qtitle" placeholder="Question Title..." rows="1" cols="80"></textarea>
+		<textarea id="qtitle" placeholder="Question Title..." rows="1" cols="93"></textarea>
 		<br>
-        <textarea id="tagList" placeholder="Type Tags (Seperate by comma)" rows="1" cols="80"></textarea>
+        <textarea id="tagList" placeholder="Type Tags (Seperate by comma)" rows="1" cols="93"></textarea>
         <br>
-		<textarea id="qbody" placeholder="Write the Question..." rows="6" cols="80"></textarea>
+		<textarea id="qbody" placeholder="Write the Question..." rows="6" cols="93"></textarea>
         <br>
 
         <button type="button" id="postButton"}>Post!</button>
@@ -99,6 +98,24 @@
 		<button id="postAnswer" type="button" onclick="alert(' Post Successfully!')">Post!</button>
       </div>
       </div>
+
+<div class="panel panel-default">
+      <div class="panel-heading">
+        <h4 class="panel-title">
+            <a data-toggle="collapse" data-parent="#accordion" href="#collapse3">CS423 Vs CS425 for Job hunting </a><a href="Tags/CS423.html"><h6 id="tag">CS423</h6></a><a href="Tags/CS425.html"><h6 id="tag">CS425</h6></a>
+        </h4>
+      </div>
+      <div id="collapse3" class="panel-collapse collapse">
+          <div class="panel-body"><h4 id="Q"> Q </h4>Hi guys, I'm considering taking one of CS423 (distributed system) and CS425(operation system). 
+          Which one is more useful for job hunting? Which one has more workload comparatively. 
+      BTW, I just switched my field from biotech to computer science, and have no much relative backgrounds. Thanks!<hr>
+          <h4 id="Q"> A </h4>Operating systems did not really teach much relevant to operating system design. It was mostly hacked together kernel modules because they had to work in constrained environments. Due to the constraints there was also no way to debug, most code errors just crash the machine and you're stuck with printk debugging. I'd avoid.<hr>
+          <h4 id="Q"> A </h4>Distributed Systems is better for jobs</div>
+    <br/><br/><br/>
+    <textarea placeholder="Post your Answer..." rows="4" cols="80"></textarea>
+    <button id="postAnswer" type="button" onclick="alert(' Post Successfully!')">Post!</button>
+      </div>
+    </div>
 
     <div class="panel panel-default">
       <div class="panel-heading">
@@ -158,9 +175,6 @@
     <br/><br>
     <div id = "hot" style=" height: 11px;">-Poli Sci 111 next semester, any one wanna join?</div>
     <br/><br>
-    <div id = "hot" style=" height: 11px;">-Poli Sci 111 next semester, any one wanna join?</div>
-    <br/><br>
-    <div id = "hot" style=" height: 11px;">-Poli Sci 111 next semester, any one wanna join?</div>
     <br/>
     
 	</div>
