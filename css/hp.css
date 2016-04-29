@@ -54,7 +54,7 @@ section{
 }
 
 #left{
-    width: 610px;
+    width: 700px;
     position: absolute;
     background-color: #f4f4f4;
     margin-top: 10px;
@@ -80,14 +80,22 @@ textarea {
 #right
 {
     background-color: #fff;
-    width: 450px;
-    right: 30px;
+    width: 340px;
+    right: -30px;
     padding: 0px 58px;
-    background-size: 60%;
+    background-size: 58px;
     position: relative;
     margin-top: -375px;
     margin-left: 750px;
 
+}
+
+#myDropdown2 a{
+    font-size: 11px;
+}
+
+#myDropdown a{
+    font-size: 11px;
 }
 
 
@@ -109,7 +117,7 @@ textarea {
 
 .searchBar h3{
     background-color:  #b3daff;
-    width: 580px;
+    width: 673px;
     border-width:medium;
     margin-left: 10px;
 }
@@ -119,13 +127,13 @@ textarea {
     font-style: italic;
     font-family: "muli italic", sans-serif;
     margin-left: -50px;
-    width: 400px;
+    width: 340px;
 
 }
 
 #right h3{
     margin-left: -57px;
-    width: 450px;
+    width: 340px;
 }
 
 /*****************************************/
